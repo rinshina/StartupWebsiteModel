@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- <meta charset="UTF-8"> -->
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Startup</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+    <script src="https://use.fontawesome.com/355261cc28.js"></script>
+    
+
+</head>
+<body>
+    <!-- NAV Section -->
+    <section id="header">
+        <div class="header container">
+            <div class="nav-bar">
+                <div class="logo" >
+                    <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <defs>
+                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use xlink:href="#image0" transform="translate(0 -0.0325444) scale(0.00591716)"/>
+                        </pattern>
+                        <image id="image0" width="169" height="180" xlink:href="data:image/jpeg;base64,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"/>
+                        </defs>
+                        </svg>                        
+                </div>
+                <div class="nav-list">
+                    <div class="hamburger active"><div class="bar"></div></div>
+                    <ul class="nav-ul">
+                        <li class="li">
+                            <a href="">HOME</a>
+                            
+                        </li>
+                        <li><a href="#">About Us</a></li>
+                        <li class="li">
+                            <a href="#" class="menu-item">SERVICES</a>
+                            <div class="mega-menu">
+                                   
+                                <div class="row">
+                                  <div class="column">
+                                    <h3>Individual</h3>
+                                    <a style="border-bottom: none;" href="#">Link 1</a>
+                                    <a href="#">Link 2</a>
+                                    <a href="#">Link 3</a>
+                                  </div>
+                                  <div class="column">
+                                    <h3>Institution</h3>
+                                    <a href="#">Link 1</a>
+                                    <a href="#">Link 2</a>
+                                    <a href="#">Link 3</a>
+                                  </div>
+                                  <div class="column">
+                                    <h3>Community</h3>
+                                    <a href="#">Link 1</a>
+                                    <a href="#">Link 2</a>
+                                    <a href="#">Link 3</a>
+                                  </div>
+                                  <div class="column">
+                                    <h3>Category 4</h3>
+                                    <a href="#">Link 1</a>
+                                    <a href="#">Link 2</a>
+                                    <a href="#">Link 3</a>
+                                  </div>
+                                </div>
+                              </div>
+                        </li>
+                        <li><a href="#" >BLOGS</a></li>
+                        <li><a href="#">HELP DESK</a></li>
+                        <li><a href="#">CDAT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of NAV Section -->
+
+    <!-- HERO section -->
+    <section id="hero">
+        <div class="hero container">
+            <div>
+                <h1>My Ways</h1>
+            </div>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                 text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It 
+                 has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p>
+        </div>
+    </section>
+    <!--End of HERO section -->
+
+    <!-- ABOUT Section -->
+    <section id="about">
+        <div class="about container">
+            <div class="about-top">
+                <h1 class="section-title">who we are</h1>
+            </div>
+            <div class="about-content">
+                <div class="col-right">
+                     <h2 class="about-title">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur</h2>
+                     <p class="about-para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                          industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 
+                          to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+                           remaining essentially unchanged. .</p>
+                    <div class="col-right-bottom">
+                        <div><a href="#" class="about-learn-more">Learn More</a></div>
+                        <div class="social-container">
+
+                            <ul class="social-container-icons">
+                                <li class="social-roundbox">
+                                    <a href="" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                </li>
+                                <li class="social-roundbox">
+                                    <a href="" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                </li>
+                                <li class="social-roundbox">
+                                    <a href="" class="whatsapp"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                                </li>
+                                <li class="social-roundbox">
+                                    <a href="" class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-left">
+                   <img src="img/about.jpg" alt="img">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of ABOUT Section -->
+
+    <!-- COUNTER Section -->
+    <section id="counters">
+        <div class="counters container">
+            <div class="counter-row">
+                <div class="counter-item">
+                    <i class="fa fa-globe fa-5x" aria-hidden="true"></i>
+                    <div class="counter" data-target="25">0</div>
+                    <h4>GLOBALIZATION WORK</h4>
+                    
+                </div>
+                <div class="counter-item">
+                    <i class="fa fa-user fa-5x" aria-hidden="true"></i>
+                    <div class="counter" data-target="750">0</div>
+                    <h4>HAPPY DONATORS</h4>
+                    
+                </div>
+                <div class="counter-item">
+                    <i class="fa fa-rocket fa-5x" aria-hidden="true"></i>
+                    <div class="counter" data-target="250">0</div>
+                    <h4>SUCCESS MISSION</h4>
+                    <h4></h4>
+                </div>
+                <div class="counter-item">
+                    <i class="fa fa-users fa-5x" aria-hidden="true"></i>
+                    <div class="counter" data-target="1000">0</div>
+                    <h4>VOLUNTEER REACHED</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of COUNTER Section -->
+
+    <!-- RECENT Works -->
+    <section id="our-works">
+        <div class="our-works container">
+            <div class="our-works-content">
+                <h3 class="our-works-title">OUR WORKS</h3>
+                <p class="our-works-title-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temp
+                    or incididunt ut labore et dolore magna aliqua.</p>
+                <div class="our-works-link-tabs">
+                    <button class="our-works-link-tab" onclick="openPage('Projects', this, '#d9c4ba')"  id="defaultOpen">Projects</button>
+                    <button class="our-works-link-tab" onclick="openPage('Events', this, '#d9c4ba')">Events</button>
+                    <button class="our-works-link-tab" onclick="openPage('Blogs', this, '#d9c4ba')">Blogs</button>
+                    
+                </div>
+                <div  id="Projects" class="our-works-link-content">
+                    
+                    <div class="slide-card-container">
+                        <div class="slide-card">
+                            <div class="slide-card-imgbox">
+                                <img src="img/project1.jpg" alt="img" srcset="">
+                            </div>
+                            <div class="slide-card-content">
+                                <h2>Project 1</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nos
+                                    trud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis 
+                                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                     nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                                      qui officia deserunt mollit anim id est laborum
+                                    
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-card-container">
+                        <div class="slide-card">
+                            <div class="slide-card-imgbox">
+                                <img src="img/project2.jpg" alt="img" srcset="">
+                            </div>
+                            <div class="slide-card-content">
+                                <h2>Project 2</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nos
+                                    trud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis 
+                                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                     nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                                      qui officia deserunt mollit anim id est laborum
+                                    
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-card-container">
+                        <div class="slide-card">
+                            <div class="slide-card-imgbox">
+                                <img src="img/project3.jpg" alt="img" srcset="">
+                            </div>
+                            <div class="slide-card-content">
+                                <h2>Project 3</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nos
+                                    trud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis 
+                                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                     nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                                      qui officia deserunt mollit anim id est laborum
+                                    
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div  id="Events" class="our-works-link-content">
+                    
+                    <div class="slide-card-container">
+                        <div class="slide-card">
+                            <div class="slide-card-imgbox">
+                                <img src="img/event1.jpg" alt="img" srcset="">
+                            </div>
+                            <div class="slide-card-content">
+                                <h2>Event 1</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nos
+                                    trud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis 
+                                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                     nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                                      qui officia deserunt mollit anim id est laborum
+                                    
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-card-container">
+                        <div class="slide-card">
+                            <div class="slide-card-imgbox">
+                                <img src="img/event2.jpg" alt="img" srcset="">
+                            </div>
+                            <div class="slide-card-content">
+                                <h2>Event 2</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nos
+                                    trud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis 
+                                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                     nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                                      qui officia deserunt mollit anim id est laborum
+                                    
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-card-container">
+                        <div class="slide-card">
+                            <div class="slide-card-imgbox">
+                                <img src="img/event3.jpg" alt="img" srcset="">
+                            </div>
+                            <div class="slide-card-content">
+                                <h2>Event 3</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nos
+                                    trud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis 
+                                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                     nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                                      qui officia deserunt mollit anim id est laborum
+                                    
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                  
+                </div>
+                <div  id="Blogs" class="our-works-link-content">
+                    
+                    <div class="slide-card-container">
+                        <div class="slide-card">
+                            <div class="slide-card-imgbox">
+                                <img src="img/blog1.jpg" alt="img" srcset="">
+                            </div>
+                            <div class="slide-card-content">
+                                <h2>Blog 1</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nos
+                                    trud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis 
+                                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                     nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                                      qui officia deserunt mollit anim id est laborum
+                                    
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-card-container">
+                        <div class="slide-card">
+                            <div class="slide-card-imgbox">
+                                <img src="img/blog2.jpg" alt="img" srcset="">
+                            </div>
+                            <div class="slide-card-content">
+                                <h2>Blog 2</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nos
+                                    trud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis 
+                                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                     nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                                      qui officia deserunt mollit anim id est laborum
+                                    
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-card-container">
+                        <div class="slide-card">
+                            <div class="slide-card-imgbox">
+                                <img src="img/blog3.jpg" alt="img" srcset="">
+                            </div>
+                            <div class="slide-card-content">
+                                <h2>Blog 3</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nos
+                                    trud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis 
+                                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                     nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                                      qui officia deserunt mollit anim id est laborum
+                                    
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                  
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End RECENT Works -->
+
+    <!-- Newsletter Subscription -->
+    <section id="news-letter">
+        <div class="news-letter container">
+            <div class="subscribtion-container">
+                <h2>Stay Informed With Our Newsletter</h2>
+                <p class="news-letter-para">Subscribe to our newsletter and get latest news from us.</p>              
+                
+                <form action="" class="news-letter-form">
+                    <input type="text" placeholder="Your e-mail id" name="mail" required>
+                    <button type="submit">
+                        <i class="fa fa-paper-plane fa-2x" aria-hidden="true"></i>
+                    </button>
+                </form>  
+            </div> 
+        </div>
+    </section>
+    <!-- End of Newsletter Subscription -->
+    <!-- Testimonial section -->
+    <section id="testimonials">
+        <div class="testimonials containers">
+                <div class="testimonial-row">
+                        <div class="testimonial">
+                            <img src="img/testimonial1.jpg" alt="img">
+                            <div class="testimonial-client">Brandon Auger</div>
+                            
+                            <h4 class="testimonial-client-place">Spain</h4>
+                            
+                            <p class="testimonial-client-review">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took 
+                                a galley of type and scrambled it to make a type specimen book.</p>                      
+                        </div>
+                        <div class="testimonial">
+                            <img src="img/testimonial2.jpg" alt="img">
+                            <div class="testimonial-client">Maria John</div>
+                                <h4 class="testimonial-client-place">Germany</h4>
+                            
+                            <p class="testimonial-client-review">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+                                  a galley of type and scrambled it to make a type specimen book.</p>
+                        </div>
+                        <div class="testimonial">
+                            <img src="img/testimonial3.jpg" alt="img">
+                            <div class="testimonial-client">Cristina Parker</div>
+                                <h4 class="testimonial-client-place">America</h4>
+                            
+                            <p class="testimonial-client-review">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took 
+                            a galley of type and scrambled it to make a type specimen book.</p> 
+                       </div>
+                        
+                </div>
+
+        </div>
+    </section>
+    <!-- End of Testimonial section -->
+    <!-- Footer Section -->
+    <section id="footer">
+        <div class="footer">
+            <div class="footer-row">
+                <div class="footer-col">
+                    <h3>About Us</h3>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took 
+                        a galley of type and scrambled it to make a type specimen book.
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h3>Pages</h3>
+                    <a href="#">About Us</a>
+                    <a href="#">News</a>
+                    <a href="#">Events</a>
+                    <a href="#">Gallery</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div class="footer-col">
+                    <h3>Contacts</h3>
+                    <div class="contacts">
+                        <div class="contact-item">
+                            <div class="contact-item-content">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <div class="contact-item-content-h4">Neque porro quisquam est qui dolorem, ipsum quia dolor sit amet, conse</div>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item-content">
+                                <i class="fa fa-phone-square" aria-hidden="true"></i>
+                                <div class="contact-item-content-h4">0495 33443786</div>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item-content">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                                <div class="contact-item-content-h4">lorem@lorem.Org</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>SOCIAL MEDIA</h3>
+                    <ul class="footer-social-container-icons">
+                        <li class="footer-social-roundbox">
+                            <a href="" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <h4 class="footer-social-icon-label">Facebook</h4>
+                        </li>
+                        <li class="footer-social-roundbox">
+                            <a href="" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <h4 class="footer-social-icon-label">Twitter</h4>
+                        </li>
+                        <li class="footer-social-roundbox">
+                            <a href="" class="whatsapp"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                            <h4 class="footer-social-icon-label">Whatsapp</h4>
+                        </li>
+                        <li class="footer-social-roundbox">
+                            <a href="" class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            <h4 class="footer-social-icon-label">Instagram</h4>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section -->
+
+</body>
+</html>
